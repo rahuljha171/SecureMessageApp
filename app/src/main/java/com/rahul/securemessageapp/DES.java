@@ -112,11 +112,11 @@ public class DES extends AppCompatActivity {
 
                 String temp=input_text.getText().toString();
                 ans=encrypt(temp);
-                Log.d("NIKHIL", "encrypt key:" + ans);
+                Log.d("BANSAL", "encrypt key:" + ans);
                 output_text.setText(ans);
                /* String sans=ans;
                 sans=decrypt(sans);
-                Log.d("NIKHIL","decrypt key: "+sans);*/
+                Log.d("BANSAL","decrypt key: "+sans);*/
             }
         });
 
@@ -125,7 +125,7 @@ public class DES extends AppCompatActivity {
             public void onClick(View view) {
                 String temp=input_text.getText().toString();
                 ans=decrypt(temp);
-                Log.d("NIKHIL", "decrypt key:" + ans);
+                Log.d("BANSAL", "decrypt key:" + ans);
                 output_text.setText(ans);
             }
         });

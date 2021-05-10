@@ -130,7 +130,7 @@ public class AES extends AppCompatActivity {
 
     private String encrypt(String data, String password_text) throws Exception {
         SecretKeySpec key = generateKey(password_text);
-        //Log.d("NIKHIL", "encrypt key:" + key.toString());
+        //Log.d("BANSAL", "encrypt key:" + key.toString());
         Cipher c = Cipher.getInstance("AES/ECB/PKCS5Padding");//creating an object
         c.init(Cipher.ENCRYPT_MODE, key);//initialisation
         byte[] encVal = c.doFinal(data.getBytes("UTF-8"));
@@ -147,7 +147,7 @@ public class AES extends AppCompatActivity {
 
     private String decrypt(String data, String password_text) throws Exception {
         SecretKeySpec key = generateKey(password_text);
-        // Log.d("NIKHIL", "encrypt key:" + key.toString());
+        // Log.d("BANSAL", "encrypt key:" + key.toString());
         Cipher c = Cipher.getInstance("AES/ECB/PKCS5Padding");
         c.init(Cipher.DECRYPT_MODE, key);
         byte[] decodedvalue = Base64.decode(data, Base64.DEFAULT);//pehle vo base64 me encoded tha, to decode to karna padega na
